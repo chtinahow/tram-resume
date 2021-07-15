@@ -6,7 +6,7 @@ import './styles.css'
 import * as components from './components'
 
 // use content-example.js if you aren't using contentful
-// import content from './hooks/content-example';
+import content from './hooks/tina-resume-content';
 
 const html = registerHtml({
 	'college-name': components.collegeName,
@@ -32,8 +32,7 @@ const home = () => {
 	console.log(components)
 
 	// switch to content-example if you aren't using contentful
-	// const resumeContent = content
-	const resumeContent = useContentful()
+	const resumeContent = content
 
 	// if resume content isn't ready yet, wait
 	// this will usually be instantaneous
